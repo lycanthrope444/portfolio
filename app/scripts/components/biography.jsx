@@ -6,7 +6,15 @@ class BiographyView extends React.Component{
   render(){
     return(
       <LayoutView>
-        Bio PlaceHolder
+        <h1>
+          About Me
+        </h1>
+        <div>
+          I'm a recent graduate of the Iron Yard in Greenville.
+        </div>
+        <div>
+          Contact Info
+        </div>
       </LayoutView>
     )
   }

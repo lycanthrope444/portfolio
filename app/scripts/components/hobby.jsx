@@ -12,6 +12,36 @@ class HobbyView extends React.Component{
   }
 }
 
+class WhatImPlaying extends React.Component{
+  render(){
+    return(
+      <div>
+        Placeholder
+      </div>
+    )
+  }
+}
+
+class FavoriteGames extends React.Component{
+  render(){
+    return(
+      <div>
+        PlaceHolder
+      </div>
+    )
+  }
+}
+
+class TwitchFriends extends React.Component{
+  render(){
+    return(
+      <div>
+        PlaceHolder
+      </div>
+    )
+  }
+}
+
 module.exports ={
   HobbyView
 }

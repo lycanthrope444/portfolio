@@ -21,7 +21,18 @@ class NavBar extends React.Component{
   render(){
     return(
       <div>
-        Nav Bar Holder
+        <a href="#">
+          Home
+        </a>
+        <a href="#portfolio">
+          Portfolio
+        </a>
+        <a href="#hobby">
+          Hobbies
+        </a>
+        <a href="#biography">
+          About
+        </a>
       </div>
     )
   }

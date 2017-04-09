@@ -10,17 +10,34 @@ class BiographyView extends React.Component{
           About Me
         </h1>
         <div>
-          I'm a recent graduate of the Iron Yard in Greenville.
+          <p>
+            I'm a recent graduate of the Iron Yard in Greenville.
+          </p>
+          <p>
+
+          </p>
         </div>
         <div>
-          I made this page using
-          <a href="https://facebook.github.io/react/">
-            React.js.
-          </a>
-          
+          <p>
+            I made this page using {" "}
+            <span>
+              <a href="https://facebook.github.io/react/">
+                React.js.
+              </a>
+            </span>
+          </p>
         </div>
         <div>
-          Contact Info
+          <p>
+            Contact Info:
+            <a href="https://www.linkedin.com/in/nathan-starwalt-31725913b/">
+              LinkedIn
+            </a>
+
+            Email
+            Phone
+          </p>
+
         </div>
         <LegalInfo />
       </LayoutView>

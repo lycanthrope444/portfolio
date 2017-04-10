@@ -5,7 +5,7 @@ var LayoutView = require('./layout.jsx').LayoutView;
 class PortfolioView extends React.Component{
   render(){
     return(
-      <LayoutView>
+      <LayoutView activeTab ={"portfolio"}>
         <h1>
           A Selection of Work
         </h1>
@@ -23,7 +23,7 @@ class PortfolioItem extends React.Component{
     super(props);
 
     this.state={
-      title: "Project Tile",
+      title: "Project Title",
       thumbnail: "http://unsplash.it/300/300",
       comments: "Thoughts on the project",
       techDetails: "Here are some tech details",

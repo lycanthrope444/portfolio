@@ -14,7 +14,7 @@ class BiographyView extends React.Component{
             I'm a recent graduate of the Iron Yard in Greenville.
           </p>
           <p>
-
+            I've been a lifelong fan of games in all their forms.
           </p>
         </div>
         <div>
@@ -28,15 +28,20 @@ class BiographyView extends React.Component{
           </p>
         </div>
         <div>
-          <p>
-            Contact Info:
-            <a href="https://www.linkedin.com/in/nathan-starwalt-31725913b/">
-              LinkedIn
-            </a>
-
-            Email
-            Phone
-          </p>
+          Contact Info:
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/nathan-starwalt-31725913b/">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              Email
+            </li>
+            <li>
+              Phone
+            </li>
+          </ul>
 
         </div>
         <LegalInfo />

@@ -6,7 +6,11 @@ class HobbyView extends React.Component{
   render(){
     return(
       <LayoutView>
-        Hobby Place Holder
+        <h1>
+          Games & More
+        </h1>
+        <WhatImPlaying />
+        <TwitchFriends />
       </LayoutView>
     )
   }
@@ -16,7 +20,9 @@ class WhatImPlaying extends React.Component{
   render(){
     return(
       <div>
-        Placeholder
+        <h3>
+          Here are a few of the games I'm playing currently:
+        </h3>
       </div>
     )
   }
@@ -36,7 +42,10 @@ class TwitchFriends extends React.Component{
   render(){
     return(
       <div>
-        PlaceHolder
+        <h3>
+          Check out a few of my friends's streams:
+        </h3>
+
       </div>
     )
   }

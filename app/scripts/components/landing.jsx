@@ -5,7 +5,7 @@ var LayoutView = require('./layout.jsx').LayoutView;
 class LandingView extends React.Component{
   render(){
     return(
-      <div className="container">
+      <LayoutView>
         <Header />
         <div className="row">
           <div className="col-sm-6">
@@ -15,7 +15,7 @@ class LandingView extends React.Component{
             <HobbyLinks />
           </div>
         </div>
-      </div>
+      </LayoutView>
     )
   }
 }
@@ -23,7 +23,7 @@ class LandingView extends React.Component{
 class Header extends React.Component{
   render(){
     return(
-      <div>
+      <div className="landing-header">
         <h1>
           Nathan Starwalt
         </h1>

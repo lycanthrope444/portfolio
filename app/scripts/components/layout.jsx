@@ -5,9 +5,10 @@ class LayoutView extends React.Component{
     super(props);
   }
   render(){
+    console.log(this);
     return(
       <div className="container">
-        <NavBar />
+        <NavBar activeTab={null} />
         {this.props.children}
       </div>
     )
@@ -17,22 +18,38 @@ class LayoutView extends React.Component{
 class NavBar extends React.Component{
   constructor(props){
     super(props);
+
+
+    this.state={
+      activeTab: ""
+    }
   }
   render(){
+    console.log(this);
     return(
       <div>
-        <a href="#">
-          Home
-        </a>
-        <a href="#portfolio">
-          Portfolio
-        </a>
-        <a href="#hobby">
-          Hobbies
-        </a>
-        <a href="#biography">
-          About
-        </a>
+        <ul className="nav nav-tabs">
+          <li role="presentation" >
+            <a href="#">
+              Home
+            </a>
+          </li>
+          <li >
+            <a href="#portfolio">
+              Portfolio
+            </a>
+          </li>
+          <li >
+            <a href="#hobby">
+              Hobbies
+            </a>
+          </li>
+          <li >
+            <a href="#biography">
+              About
+            </a>
+          </li>
+        </ul>
       </div>
     )
   }

@@ -5,7 +5,7 @@ var LayoutView = require('./layout.jsx').LayoutView;
 class BiographyView extends React.Component{
   render(){
     return(
-      <LayoutView>
+      <div>
         <h1>
           About Me
         </h1>
@@ -45,7 +45,7 @@ class BiographyView extends React.Component{
 
         </div>
         <LegalInfo />
-      </LayoutView>
+      </div>
     )
   }
 }
@@ -54,7 +54,9 @@ class LegalInfo extends React.Component{
   render(){
     return(
       <div>
-        Legal Info
+        <p>
+          Legal Info
+        </p>
       </div>
     )
   }

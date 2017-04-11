@@ -5,15 +5,19 @@ var LayoutView = require('./layout.jsx').LayoutView;
 class PortfolioView extends React.Component{
   render(){
     return(
-      <LayoutView activeTab ={"portfolio"}>
+      <div>
         <h1>
           A Selection of Work
         </h1>
-        <HeroFinder />
-        <PixelPerfect />
-        <FightLand />
-        <SkateShop />
-      </LayoutView>
+        <div className="row">
+          <HeroFinder />
+          <PixelPerfect />
+          <GithubRemake />
+          <EtsyRemake />
+          <FightLand />
+          <SkateShop />
+        </div>
+      </div>
     )
   }
 }
@@ -34,7 +38,7 @@ class PortfolioItem extends React.Component{
   render(){
 
     return(
-      <div>
+      <div className="col-sm-6 col-md-4">
         <h2>
           <a href={this.state.livePage}>
             {this.state.title}
@@ -110,6 +114,36 @@ class HeroFinder extends PortfolioItem{
       techDetails: "Here are some tech details",
       repoLink: "https://github.com/lycanthrope444/TIY-final-project",
       livePage: "https://lycanthrope444.github.io/TIY-final-project/"
+    }
+  }
+}
+
+class EtsyRemake extends PortfolioItem{
+  constructor(props){
+    super(props);
+
+    this.state = {
+      title: "Etsy Recreation",
+      thumbnail: "http://unsplash.it/300/300",
+      comments: "This was an assignmnt from the Iron Yard",
+      techDetails: "Here are some",
+      repoLink: "https://github.com/lycanthrope444/4.2-handlebars",
+      livePage: "https://lycanthrope444.github.io/4.2-handlebars/"
+    }
+  }
+}
+
+class GithubRemake extends PortfolioItem{
+  constructor(props){
+    super(props);
+
+    this.state = {
+      title: "Github Recreation",
+      thumbnail: "http://unsplash.it/300/300",
+      comments: "This was an assignmnt from the Iron Yard",
+      techDetails: "Here are some",
+      repoLink: "https://github.com/lycanthrope444/4.4-git-profile",
+      livePage: "https://lycanthrope444.github.io/4.4-git-profile/"
     }
   }
 }

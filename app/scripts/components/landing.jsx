@@ -1,20 +1,16 @@
 var React = require('react');
 
 var LayoutView = require('./layout.jsx').LayoutView;
+var BiographyView = require('./biography.jsx').BiographyView;
+var PortfolioView = require('./portfolio.jsx').PortfolioView;
 
 class LandingView extends React.Component{
   render(){
     return(
       <LayoutView>
         <Header />
-        <div className="row">
-          <div className="col-sm-6">
-            <WorkLinks />
-          </div>
-          <div className="col-sm-6">
-            <HobbyLinks />
-          </div>
-        </div>
+        <BiographyView />
+        <PortfolioView />
       </LayoutView>
     )
   }
@@ -27,11 +23,6 @@ class Header extends React.Component{
         <h1>
           Nathan Starwalt
         </h1>
-        <h2>
-          <a href="#biography">
-            About
-          </a>
-        </h2>
       </div>
     )
   }

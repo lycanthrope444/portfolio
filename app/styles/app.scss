@@ -18,3 +18,8 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 img {
   max-width: 100%;
 }
+
+body {
+  background-image: url("https://unsplash.it/g/1200/1200/");
+  background-size: cover;
+}

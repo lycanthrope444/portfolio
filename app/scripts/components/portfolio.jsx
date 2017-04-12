@@ -5,11 +5,11 @@ var LayoutView = require('./layout.jsx').LayoutView;
 class PortfolioView extends React.Component{
   render(){
     return(
-      <div>
-        <h1>
+      <div className="row">
+        <h1 className="col-xs-12 section-header">
           A Selection of Work
         </h1>
-        <div className="row">
+        <div className="">
           <HeroFinder />
           <PixelPerfect />
           <GithubRemake />

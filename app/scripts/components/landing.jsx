@@ -11,6 +11,7 @@ class LandingView extends React.Component{
         <Header />
         <BiographyView />
         <PortfolioView />
+        <ContactInfo />
       </LayoutView>
     )
   }
@@ -19,38 +20,43 @@ class LandingView extends React.Component{
 class Header extends React.Component{
   render(){
     return(
-      <div className="landing-header">
-        <h1>
-          Nathan Starwalt
-        </h1>
+      <div className="row">
+        <div className="col-xs-12">
+          <div className="landing-header">
+            <h1>
+              Nathan Starwalt
+            </h1>
+            <h3>Front End Engineer</h3>
+          </div>
+        </div>
       </div>
+
     )
   }
 }
 
-class WorkLinks extends React.Component{
+class ContactInfo extends React.Component{
   render(){
     return(
       <div>
-        <h1>
-          <a href="#portfolio">
-            Work
-          </a>
+        <h1 className="section-header">
+          Contact Info
         </h1>
-      </div>
-    )
-  }
-}
-
-class HobbyLinks extends React.Component{
-  render(){
-    return(
-      <div>
-        <h1>
-          <a href="#hobby">
-            Play
-          </a>
-        </h1>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/nathan-starwalt-31725913b/">
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="mailto:nathanstarwalt@gmail.com">
+              nathanstarwalt@gmail.com
+            </a>
+          </li>
+          <li>
+            Phone
+          </li>
+        </ul>
       </div>
     )
   }

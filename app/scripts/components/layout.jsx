@@ -8,7 +8,6 @@ class LayoutView extends React.Component{
     console.log(this);
     return(
       <div className="container">
-        <NavBar activeTab={null} />
         {this.props.children}
       </div>
     )
@@ -27,7 +26,7 @@ class NavBar extends React.Component{
   render(){
     console.log(this);
     return(
-      <div>
+      <nav className="top-bar">
         <ul className="nav nav-tabs">
           <li role="presentation" >
             <a href="#">
@@ -50,7 +49,7 @@ class NavBar extends React.Component{
             </a>
           </li>
         </ul>
-      </div>
+      </nav>
     )
   }
 }

@@ -45,7 +45,8 @@ class PortfolioItem extends React.Component{
           </a>
         </h2>
         <a href={this.state.livePage}>
-          <img src={this.state.thumbnail}/>
+          <img className="portfolio-pic"
+            src={this.state.thumbnail}/>
         </a>
         <div>
           {this.state.techDetails}
@@ -64,7 +65,7 @@ class PixelPerfect extends PortfolioItem{
 
     this.state ={
       title: "Surf & Paddle",
-      thumbnail: "http://unsplash.it/300/300",
+      thumbnail: "images/surfandpaddle.png",
       comments: "This was an assignment from the Iron Yard.",
       techDetails: "Here are some tech details",
       repoLink: "https://github.com/lycanthrope444/1.4-pixel-perfect",
@@ -79,7 +80,7 @@ class FightLand extends PortfolioItem{
 
     this.state ={
       title: "Fight Land",
-      thumbnail: "http://unsplash.it/300/300",
+      thumbnail: "images/fightland.png",
       comments: "This was an assignment from the Iron Yard.",
       techDetails: "Here are some tech details",
       repoLink: "https://github.com/lycanthrope444/5.4-Turn-Based-Game",
@@ -94,7 +95,7 @@ class SkateShop extends PortfolioItem{
 
     this.state ={
       title: "Skate Shop Page",
-      thumbnail: "http://unsplash.it/300/300",
+      thumbnail: "images/skateshop.png",
       comments: "This was an assignment from the Iron Yard.",
       techDetails: "Here are some tech details",
       repoLink: "https://github.com/lycanthrope444/2.2-sass-responsive",
@@ -109,7 +110,7 @@ class HeroFinder extends PortfolioItem{
 
     this.state ={
       title: "Hero Finder",
-      thumbnail: "http://unsplash.it/300/300",
+      thumbnail: "images/herofinder.png",
       comments: "This was an assignment from the Iron Yard.",
       techDetails: "Here are some tech details",
       repoLink: "https://github.com/lycanthrope444/TIY-final-project",
@@ -124,7 +125,7 @@ class EtsyRemake extends PortfolioItem{
 
     this.state = {
       title: "Etsy Recreation",
-      thumbnail: "http://unsplash.it/300/300",
+      thumbnail: "images/etsyrecreation.png",
       comments: "This was an assignmnt from the Iron Yard",
       techDetails: "Here are some",
       repoLink: "https://github.com/lycanthrope444/4.2-handlebars",
@@ -139,7 +140,7 @@ class GithubRemake extends PortfolioItem{
 
     this.state = {
       title: "Github Recreation",
-      thumbnail: "http://unsplash.it/300/300",
+      thumbnail: "images/githubrecreation.png",
       comments: "This was an assignmnt from the Iron Yard",
       techDetails: "Here are some",
       repoLink: "https://github.com/lycanthrope444/4.4-git-profile",

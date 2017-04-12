@@ -38,25 +38,28 @@ class Header extends React.Component{
 class ContactInfo extends React.Component{
   render(){
     return(
-      <div>
+      <div href="row">
         <h1 className="section-header">
           Contact Info
         </h1>
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/nathan-starwalt-31725913b/">
-              LinkedIn
-            </a>
-          </li>
-          <li>
-            <a href="mailto:nathanstarwalt@gmail.com">
-              nathanstarwalt@gmail.com
-            </a>
-          </li>
-          <li>
-            Phone
-          </li>
-        </ul>
+        <div className="col-md-3">
+          <a href="https://www.linkedin.com/in/nathan-starwalt-31725913b/">
+            LinkedIn
+          </a>
+        </div>
+        <div className="col-md-3">
+          <a href="mailto:nathanstarwalt@gmail.com">
+            nathanstarwalt@gmail.com
+          </a>
+        </div>
+        <div className="col-md-3">
+          (864)-760-3438
+        </div>
+        <div className="col-md-3">
+          <a href="">
+            Resume
+          </a>
+        </div>
       </div>
     )
   }

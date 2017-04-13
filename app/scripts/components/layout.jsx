@@ -7,7 +7,7 @@ class LayoutView extends React.Component{
   render(){
     console.log(this);
     return(
-      <div className="container">
+      <div className="">
         {this.props.children}
       </div>
     )

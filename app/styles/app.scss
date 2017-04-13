@@ -20,8 +20,8 @@ img {
 }
 
 body {
-  background-image: url("https://unsplash.it/g/1200/1200/");
-  background-size: cover;
+  // background-image: url("https://unsplash.it/g/1200/1200/");
+  // background-size: cover;
 }
 
 .section-header{
@@ -30,23 +30,60 @@ body {
 
 // Header Section
 
-.landing-header{
-  text-align: center;
+.landing-header:before{
+  content: "";
+  background-color: rgba(108,165,204,.4);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
 }
 
-//portfolio section
+.landing-header{
+  height: 100vh;
+  text-align: center;
+  background-image: url("https://unsplash.it/1200/400");
+  background-size: cover;
+  color: #f2f2f2;
+  margin-top: -20px;
+}
+
+// Portfolio section
+
+.portfolio-title{
+  position: relative;
+  top: 160px;
+}
 
 .portfolio-section{
 
 }
 
 .portfolio-pic{
-  min-width: 100%;
-  height: 200px;
+  min-height: 200px;
+  max-height: 200px;
 }
 
-//personal info section
+.port-box{
+  min-height: 250px;
+}
+
+// Biography section
 
 .personal-info-section{
+  height: 100vh;
   text-align: center;
 }
+
+// Contact Info
+
+.contact-section{
+  height:100vh;
+}
+
+.contact-box{
+
+}
+
+// NavBar Side

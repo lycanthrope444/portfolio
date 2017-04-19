@@ -49,6 +49,10 @@ body {
   margin-top: -20px;
 }
 
+.name{
+  font-size: 60px;
+}
+
 // Portfolio section
 
 .portfolio-title{
@@ -66,24 +70,37 @@ body {
 }
 
 .port-box{
-  min-height: 250px;
+  overflow: scroll;
+  min-height: 200px;
+  max-height: 200px;
 }
 
 // Biography section
 
 .personal-info-section{
-  height: 100vh;
+  height: 50vh;
   text-align: center;
 }
 
 // Contact Info
 
 .contact-section{
-  height:100vh;
+  height:50vh;
 }
 
 .contact-box{
+  border: 1px solid #000;
+  height: 100px;
+}
 
+.contact-box:hover{
+
+}
+
+.contact-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // NavBar Side

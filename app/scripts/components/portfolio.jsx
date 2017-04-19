@@ -6,16 +6,18 @@ class PortfolioView extends React.Component{
   render(){
     return(
       <div className="row">
-        <h1 className="section-header">
-          A Selection of Work
-        </h1>
-        <div className="">
-          <HeroFinder />
-          <PixelPerfect />
-          <GithubRemake />
-          <EtsyRemake />
-          <FightLand />
-          <SkateShop />
+        <div className="portfolio-section">
+          <h1 className="section-header">
+            A Selection of Work
+          </h1>
+          <div className="portfolio-section">
+            <HeroFinder />
+            <PixelPerfect />
+            <GithubRemake />
+            <EtsyRemake />
+            <FightLand />
+            <SkateShop />
+          </div>
         </div>
       </div>
     )

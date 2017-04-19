@@ -5,7 +5,7 @@ var LayoutView = require('./layout.jsx').LayoutView;
 class PortfolioView extends React.Component{
   render(){
     return(
-      <div className="row">
+      <div className="col-xs-12">
         <div className="portfolio-section">
           <h1 className="section-header">
             A Selection of Work

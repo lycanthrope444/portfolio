@@ -20,12 +20,13 @@ img {
 }
 
 body {
-  // background-image: url("https://unsplash.it/g/1200/1200/");
-  // background-size: cover;
+  background-color: #385c87;
+  color: white;
 }
 
 .section-header{
   text-align: center;
+  color: white;
 }
 
 // Header Section
@@ -78,29 +79,44 @@ body {
 // Biography section
 
 .personal-info-section{
-  height: 50vh;
   text-align: center;
+}
+
+.text-link > a {
+  text-decoration: none;
+  color: white;
+}
+
+.small-header{
+  // color: #e2be1d;
 }
 
 // Contact Info
 
-.contact-section{
-  height:50vh;
+.font-icon{
+  color: white;
+  font-size: 45px;
 }
 
 .contact-box{
-  border: 1px solid #000;
+  transition: border .5s ease;
+  border: 5px solid #fff;
   height: 100px;
+  margin-top: 5px;
 }
 
 .contact-box:hover{
-
+  transition: border .5s ease;
+  border: 1px solid #fff;
 }
 
 .contact-name{
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
 }
 
 // NavBar Side

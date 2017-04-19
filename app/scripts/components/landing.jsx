@@ -9,8 +9,14 @@ class LandingView extends React.Component{
     return(
       <div>
         <Header />
-        <BiographyView />
-        <PortfolioView />
+        <div className="row">
+          <BiographyView />
+        </div>
+
+        <div className="row">
+          <PortfolioView />
+        </div>
+
       </div>
     )
   }
